@@ -1,0 +1,330 @@
+<html><head></head><body><div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a href="https://github.com/evanshortiss/sns-mobile">sns-mobile (v1.3.0)</a>
+</h1>
+<h4>Send push notifications to Android, Kindle Fire, and iOS devices easily.</h4>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.sns-mobile">module sns-mobile</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.sns-mobile.sns-mobile">
+            function <span class="apidocSignatureSpan"></span>sns-mobile
+            <span class="apidocSignatureSpan">(opts)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.sns-mobile.deviceSupported">
+            function <span class="apidocSignatureSpan">sns-mobile.</span>deviceSupported
+            <span class="apidocSignatureSpan">(platform)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.sns-mobile.interface">
+            function <span class="apidocSignatureSpan">sns-mobile.</span>interface
+            <span class="apidocSignatureSpan">(opts)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.sns-mobile.super_">
+            function <span class="apidocSignatureSpan">sns-mobile.</span>super_
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.sns-mobile.toString">
+            function <span class="apidocSignatureSpan">sns-mobile.</span>toString
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">sns-mobile.</span>EVENTS</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">sns-mobile.</span>SUPPORTED_PLATFORMS</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.sns-mobile.deviceSupported">module sns-mobile.deviceSupported</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.sns-mobile.deviceSupported.deviceSupported">
+            function <span class="apidocSignatureSpan">sns-mobile.</span>deviceSupported
+            <span class="apidocSignatureSpan">(platform)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.sns-mobile.toString">module sns-mobile.toString</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.sns-mobile.toString.toString">
+            function <span class="apidocSignatureSpan">sns-mobile.</span>toString
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.sns-mobile" id="apidoc.module.sns-mobile">module sns-mobile</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.sns-mobile.sns-mobile" id="apidoc.element.sns-mobile.sns-mobile">
+        function <span class="apidocSignatureSpan"></span>sns-mobile
+        <span class="apidocSignatureSpan">(opts)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Interface(opts) {
+  if (!deviceSupported(opts.platform)) {
+    var e = util.format('Unsupported platform option, "%s". Please provide ' +
+      'a platform from SNS.SUPPORTED_PLATFORMS', opts.platform);
+
+    throw new Error(e);
+  }
+
+  this.platformApplicationArn = opts.platformApplicationArn;
+  this.platform = opts.platform;
+  this.sandbox = opts.sandbox;
+
+  if (opts.sns) {
+    if (
+      opts.sns instanceof AWS.SNS ||
+      (opts.sns.createPlatformEndpoint &amp;&amp; opts.sns.getEndpointAttributes)
+    ){
+      this.sns = opts.sns;
+    } else {
+      this.sns = new AWS.SNS(opts.sns);
+    }
+  } else {
+    this.sns = new AWS.SNS({
+      region: opts.region,
+      apiVersion: opts.apiVersion,
+      accessKeyId: opts.accessKeyId,
+      secretAccessKey: opts.secretAccessKey
+    });
+  }
+
+  events.EventEmitter.call(this);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.sns-mobile.deviceSupported" id="apidoc.element.sns-mobile.deviceSupported">
+        function <span class="apidocSignatureSpan">sns-mobile.</span>deviceSupported
+        <span class="apidocSignatureSpan">(platform)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function deviceSupported(platform) {
+  return SUPPORTED_PLATFORMS.hasOwnProperty(platform);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.sns-mobile.interface" id="apidoc.element.sns-mobile.interface">
+        function <span class="apidocSignatureSpan">sns-mobile.</span>interface
+        <span class="apidocSignatureSpan">(opts)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Interface(opts) {
+  if (!deviceSupported(opts.platform)) {
+    var e = util.format('Unsupported platform option, "%s". Please provide ' +
+      'a platform from SNS.SUPPORTED_PLATFORMS', opts.platform);
+
+    throw new Error(e);
+  }
+
+  this.platformApplicationArn = opts.platformApplicationArn;
+  this.platform = opts.platform;
+  this.sandbox = opts.sandbox;
+
+  if (opts.sns) {
+    if (
+      opts.sns instanceof AWS.SNS ||
+      (opts.sns.createPlatformEndpoint &amp;&amp; opts.sns.getEndpointAttributes)
+    ){
+      this.sns = opts.sns;
+    } else {
+      this.sns = new AWS.SNS(opts.sns);
+    }
+  } else {
+    this.sns = new AWS.SNS({
+      region: opts.region,
+      apiVersion: opts.apiVersion,
+      accessKeyId: opts.accessKeyId,
+      secretAccessKey: opts.secretAccessKey
+    });
+  }
+
+  events.EventEmitter.call(this);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.sns-mobile.super_" id="apidoc.element.sns-mobile.super_">
+        function <span class="apidocSignatureSpan">sns-mobile.</span>super_
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function EventEmitter() {
+  EventEmitter.init.call(this);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.sns-mobile.toString" id="apidoc.element.sns-mobile.toString">
+        function <span class="apidocSignatureSpan">sns-mobile.</span>toString
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">toString = function () {
+    return text;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.sns-mobile.deviceSupported" id="apidoc.module.sns-mobile.deviceSupported">module sns-mobile.deviceSupported</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.sns-mobile.deviceSupported.deviceSupported" id="apidoc.element.sns-mobile.deviceSupported.deviceSupported">
+        function <span class="apidocSignatureSpan">sns-mobile.</span>deviceSupported
+        <span class="apidocSignatureSpan">(platform)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function deviceSupported(platform) {
+  return SUPPORTED_PLATFORMS.hasOwnProperty(platform);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.sns-mobile.toString" id="apidoc.module.sns-mobile.toString">module sns-mobile.toString</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.sns-mobile.toString.toString" id="apidoc.element.sns-mobile.toString.toString">
+        function <span class="apidocSignatureSpan">sns-mobile.</span>toString
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function toString() { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
+</body></html>
