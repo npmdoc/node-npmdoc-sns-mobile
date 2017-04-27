@@ -1,6 +1,7 @@
 # npmdoc-sns-mobile
 
-api documentation for  [sns-mobile (v1.3.0)](https://github.com/evanshortiss/sns-mobile)  [![npm package](https://img.shields.io/npm/v/npmdoc-sns-mobile.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-sns-mobile) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-sns-mobile.svg)](https://travis-ci.org/npmdoc/node-npmdoc-sns-mobile)
+#### basic api documentation for  [sns-mobile (v1.3.0)](https://github.com/evanshortiss/sns-mobile)  [![npm package](https://img.shields.io/npm/v/npmdoc-sns-mobile.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-sns-mobile) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-sns-mobile.svg)](https://travis-ci.org/npmdoc/node-npmdoc-sns-mobile)
+
 #### Send push notifications to Android, Kindle Fire, and iOS devices easily.
 
 [![NPM](https://nodei.co/npm/sns-mobile.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/sns-mobile)
@@ -75,7 +76,8 @@ api documentation for  [sns-mobile (v1.3.0)](https://github.com/evanshortiss/sns
         "test": "mocha test/",
         "test-debug": "mocha --debug-brk test/"
     },
-    "version": "1.3.0"
+    "version": "1.3.0",
+    "bin": {}
 }
 ```
 
