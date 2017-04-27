@@ -99,15 +99,6 @@
 
         <li>
 
-            <a class="apidocElementLiA" href="#apidoc.element.sns-mobile.toString">
-            function <span class="apidocSignatureSpan">sns-mobile.</span>toString
-            <span class="apidocSignatureSpan">()</span>
-            </a>
-
-        </li>
-
-        <li>
-
             <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">sns-mobile.</span>EVENTS</span>
 
         </li>
@@ -118,28 +109,280 @@
 
         </li>
 
-    </ol></li>
-
-    <li class="apidocModuleLi"><a href="#apidoc.module.sns-mobile.deviceSupported">module sns-mobile.deviceSupported</a><ol>
-
         <li>
 
-            <a class="apidocElementLiA" href="#apidoc.element.sns-mobile.deviceSupported.deviceSupported">
-            function <span class="apidocSignatureSpan">sns-mobile.</span>deviceSupported
-            <span class="apidocSignatureSpan">(platform)</span>
-            </a>
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">sns-mobile.</span>interface.prototype</span>
 
         </li>
 
     </ol></li>
 
-    <li class="apidocModuleLi"><a href="#apidoc.module.sns-mobile.toString">module sns-mobile.toString</a><ol>
+    <li class="apidocModuleLi"><a href="#apidoc.module.sns-mobile.interface">module sns-mobile.interface</a><ol>
 
         <li>
 
-            <a class="apidocElementLiA" href="#apidoc.element.sns-mobile.toString.toString">
-            function <span class="apidocSignatureSpan">sns-mobile.</span>toString
+            <a class="apidocElementLiA" href="#apidoc.element.sns-mobile.interface.interface">
+            function <span class="apidocSignatureSpan">sns-mobile.</span>interface
+            <span class="apidocSignatureSpan">(opts)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.sns-mobile.interface.deviceSupported">
+            function <span class="apidocSignatureSpan">sns-mobile.interface.</span>deviceSupported
+            <span class="apidocSignatureSpan">(platform)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.sns-mobile.interface.super_">
+            function <span class="apidocSignatureSpan">sns-mobile.interface.</span>super_
             <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">sns-mobile.interface.</span>EVENTS</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">sns-mobile.interface.</span>SUPPORTED_PLATFORMS</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.sns-mobile.interface.prototype">module sns-mobile.interface.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.sns-mobile.interface.prototype._broadcastMessage">
+            function <span class="apidocSignatureSpan">sns-mobile.interface.prototype.</span>_broadcastMessage
+            <span class="apidocSignatureSpan">(endpoints, message, callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.sns-mobile.interface.prototype._getApplications">
+            function <span class="apidocSignatureSpan">sns-mobile.interface.prototype.</span>_getApplications
+            <span class="apidocSignatureSpan">(nextToken, callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.sns-mobile.interface.prototype._getSubscriptions">
+            function <span class="apidocSignatureSpan">sns-mobile.interface.prototype.</span>_getSubscriptions
+            <span class="apidocSignatureSpan">(nextToken, topicArn, callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.sns-mobile.interface.prototype._getTopics">
+            function <span class="apidocSignatureSpan">sns-mobile.interface.prototype.</span>_getTopics
+            <span class="apidocSignatureSpan">(nextToken, callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.sns-mobile.interface.prototype._getUsers">
+            function <span class="apidocSignatureSpan">sns-mobile.interface.prototype.</span>_getUsers
+            <span class="apidocSignatureSpan">(nextToken, callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.sns-mobile.interface.prototype.addUser">
+            function <span class="apidocSignatureSpan">sns-mobile.interface.prototype.</span>addUser
+            <span class="apidocSignatureSpan">(deviceId, customUserData, callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.sns-mobile.interface.prototype.broadcastMessage">
+            function <span class="apidocSignatureSpan">sns-mobile.interface.prototype.</span>broadcastMessage
+            <span class="apidocSignatureSpan">(message, callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.sns-mobile.interface.prototype.convertToApnsFormat">
+            function <span class="apidocSignatureSpan">sns-mobile.interface.prototype.</span>convertToApnsFormat
+            <span class="apidocSignatureSpan">(message, callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.sns-mobile.interface.prototype.convertToGcmFormat">
+            function <span class="apidocSignatureSpan">sns-mobile.interface.prototype.</span>convertToGcmFormat
+            <span class="apidocSignatureSpan">(message, callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.sns-mobile.interface.prototype.createTopic">
+            function <span class="apidocSignatureSpan">sns-mobile.interface.prototype.</span>createTopic
+            <span class="apidocSignatureSpan">(name, callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.sns-mobile.interface.prototype.deleteTopic">
+            function <span class="apidocSignatureSpan">sns-mobile.interface.prototype.</span>deleteTopic
+            <span class="apidocSignatureSpan">(topicArn, callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.sns-mobile.interface.prototype.deleteUser">
+            function <span class="apidocSignatureSpan">sns-mobile.interface.prototype.</span>deleteUser
+            <span class="apidocSignatureSpan">(endpointArn, callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.sns-mobile.interface.prototype.getApiVersion">
+            function <span class="apidocSignatureSpan">sns-mobile.interface.prototype.</span>getApiVersion
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.sns-mobile.interface.prototype.getApplications">
+            function <span class="apidocSignatureSpan">sns-mobile.interface.prototype.</span>getApplications
+            <span class="apidocSignatureSpan">(callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.sns-mobile.interface.prototype.getPlatformApplicationArn">
+            function <span class="apidocSignatureSpan">sns-mobile.interface.prototype.</span>getPlatformApplicationArn
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.sns-mobile.interface.prototype.getRegion">
+            function <span class="apidocSignatureSpan">sns-mobile.interface.prototype.</span>getRegion
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.sns-mobile.interface.prototype.getSubscriptions">
+            function <span class="apidocSignatureSpan">sns-mobile.interface.prototype.</span>getSubscriptions
+            <span class="apidocSignatureSpan">(topicArn, callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.sns-mobile.interface.prototype.getTopics">
+            function <span class="apidocSignatureSpan">sns-mobile.interface.prototype.</span>getTopics
+            <span class="apidocSignatureSpan">(callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.sns-mobile.interface.prototype.getUser">
+            function <span class="apidocSignatureSpan">sns-mobile.interface.prototype.</span>getUser
+            <span class="apidocSignatureSpan">(endpointArn, callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.sns-mobile.interface.prototype.getUsers">
+            function <span class="apidocSignatureSpan">sns-mobile.interface.prototype.</span>getUsers
+            <span class="apidocSignatureSpan">(callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.sns-mobile.interface.prototype.publishToTopic">
+            function <span class="apidocSignatureSpan">sns-mobile.interface.prototype.</span>publishToTopic
+            <span class="apidocSignatureSpan">(topicArn, message, callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.sns-mobile.interface.prototype.sendMessage">
+            function <span class="apidocSignatureSpan">sns-mobile.interface.prototype.</span>sendMessage
+            <span class="apidocSignatureSpan">(endpointArn, msg, callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.sns-mobile.interface.prototype.setAttributes">
+            function <span class="apidocSignatureSpan">sns-mobile.interface.prototype.</span>setAttributes
+            <span class="apidocSignatureSpan">(endpointArn, attributes, callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.sns-mobile.interface.prototype.subscribe">
+            function <span class="apidocSignatureSpan">sns-mobile.interface.prototype.</span>subscribe
+            <span class="apidocSignatureSpan">(endpointArn, topicArn, callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.sns-mobile.interface.prototype.unsubscribe">
+            function <span class="apidocSignatureSpan">sns-mobile.interface.prototype.</span>unsubscribe
+            <span class="apidocSignatureSpan">(subscriptionArn, callback)</span>
             </a>
 
         </li>
@@ -270,19 +513,6 @@
 
 
 
-    <h2>
-        <a href="#apidoc.element.sns-mobile.toString" id="apidoc.element.sns-mobile.toString">
-        function <span class="apidocSignatureSpan">sns-mobile.</span>toString
-        <span class="apidocSignatureSpan">()</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">toString = function () {
-    return text;
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
-    </ul>
-
 
 
 
@@ -291,12 +521,56 @@
 </div>
 
 <div class="apidocSectionDiv">
-<h1><a href="#apidoc.module.sns-mobile.deviceSupported" id="apidoc.module.sns-mobile.deviceSupported">module sns-mobile.deviceSupported</a></h1>
+<h1><a href="#apidoc.module.sns-mobile.interface" id="apidoc.module.sns-mobile.interface">module sns-mobile.interface</a></h1>
 
 
     <h2>
-        <a href="#apidoc.element.sns-mobile.deviceSupported.deviceSupported" id="apidoc.element.sns-mobile.deviceSupported.deviceSupported">
-        function <span class="apidocSignatureSpan">sns-mobile.</span>deviceSupported
+        <a href="#apidoc.element.sns-mobile.interface.interface" id="apidoc.element.sns-mobile.interface.interface">
+        function <span class="apidocSignatureSpan">sns-mobile.</span>interface
+        <span class="apidocSignatureSpan">(opts)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Interface(opts) {
+  if (!deviceSupported(opts.platform)) {
+    var e = util.format(&#x27;Unsupported platform option, &#x22;%s&#x22;. Please provide &#x27; +
+      &#x27;a platform from SNS.SUPPORTED_PLATFORMS&#x27;, opts.platform);
+
+    throw new Error(e);
+  }
+
+  this.platformApplicationArn = opts.platformApplicationArn;
+  this.platform = opts.platform;
+  this.sandbox = opts.sandbox;
+
+  if (opts.sns) {
+    if (
+      opts.sns instanceof AWS.SNS ||
+      (opts.sns.createPlatformEndpoint &#x26;&#x26; opts.sns.getEndpointAttributes)
+    ){
+      this.sns = opts.sns;
+    } else {
+      this.sns = new AWS.SNS(opts.sns);
+    }
+  } else {
+    this.sns = new AWS.SNS({
+      region: opts.region,
+      apiVersion: opts.apiVersion,
+      accessKeyId: opts.accessKeyId,
+      secretAccessKey: opts.secretAccessKey
+    });
+  }
+
+  events.EventEmitter.call(this);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.sns-mobile.interface.deviceSupported" id="apidoc.element.sns-mobile.interface.deviceSupported">
+        function <span class="apidocSignatureSpan">sns-mobile.interface.</span>deviceSupported
         <span class="apidocSignatureSpan">(platform)</span>
         </a>
     </h2>
@@ -308,21 +582,1195 @@
     </ul>
 
 
-</div>
-
-<div class="apidocSectionDiv">
-<h1><a href="#apidoc.module.sns-mobile.toString" id="apidoc.module.sns-mobile.toString">module sns-mobile.toString</a></h1>
-
 
     <h2>
-        <a href="#apidoc.element.sns-mobile.toString.toString" id="apidoc.element.sns-mobile.toString.toString">
-        function <span class="apidocSignatureSpan">sns-mobile.</span>toString
+        <a href="#apidoc.element.sns-mobile.interface.super_" id="apidoc.element.sns-mobile.interface.super_">
+        function <span class="apidocSignatureSpan">sns-mobile.interface.</span>super_
         <span class="apidocSignatureSpan">()</span>
         </a>
     </h2>
     <ul>
-    <li>description and source-code<pre class="apidocCodePre">function toString() { [native code] }</pre></li>
+    <li>description and source-code<pre class="apidocCodePre">function EventEmitter() {
+  EventEmitter.init.call(this);
+}</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.sns-mobile.interface.prototype" id="apidoc.module.sns-mobile.interface.prototype">module sns-mobile.interface.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.sns-mobile.interface.prototype._broadcastMessage" id="apidoc.element.sns-mobile.interface.prototype._broadcastMessage">
+        function <span class="apidocSignatureSpan">sns-mobile.interface.prototype.</span>_broadcastMessage
+        <span class="apidocSignatureSpan">(endpoints, message, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">_broadcastMessage = function (endpoints, message, callback) {
+  var self = this;
+
+  async.each(endpoints, function(endpoint, cb) {
+    self.sendMessage(endpoint.EndpointArn, message, function() {
+      cb();
+    });
+  }, callback);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+if (err) {
+  return callback(err, null);
+}
+var nextToken = res.NextToken;
+
+self.emit(EMITTED_EVENTS.BROADCAST_START);
+
+self.<span class="apidocCodeKeywordSpan">_broadcastMessage</span>(res.Endpoints, message, function() {
+  async.whilst(function() {
+    // Only keep going so long as we have a token
+    return (typeof nextToken !== &#x27;undefined&#x27; &#x26;&#x26; nextToken !== null);
+  }, function(cb) {
+    self._getUsers(nextToken, function(err, res) {
+      if (err) {
+        return cb(err);
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.sns-mobile.interface.prototype._getApplications" id="apidoc.element.sns-mobile.interface.prototype._getApplications">
+        function <span class="apidocSignatureSpan">sns-mobile.interface.prototype.</span>_getApplications
+        <span class="apidocSignatureSpan">(nextToken, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">_getApplications = function (nextToken, callback) {
+  var params = {};
+
+  if (nextToken) {
+    params.NextToken = nextToken;
+  }
+
+  this.sns.listPlatformApplications(params, callback);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+ * @param {Function} calback
+ */
+
+Interface.prototype.getApplications = function(callback) {
+  var applications = [];
+
+  var self = this;
+  this.<span class="apidocCodeKeywordSpan">_getApplications</span>(null, function(err, res) {
+if (err) {
+  return callback(err, null);
+}
+var nextToken = res.NextToken;
+applications = applications.concat(res.PlatformApplications);
+
+async.whilst(function() {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.sns-mobile.interface.prototype._getSubscriptions" id="apidoc.element.sns-mobile.interface.prototype._getSubscriptions">
+        function <span class="apidocSignatureSpan">sns-mobile.interface.prototype.</span>_getSubscriptions
+        <span class="apidocSignatureSpan">(nextToken, topicArn, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">_getSubscriptions = function (nextToken, topicArn, callback) {
+  var params = {};
+  if (nextToken) {
+    params.NextToken = nextToken;
+  }
+  if (!topicArn) {
+    this.sns.listSubscriptions(params, callback);
+    return;
+  }
+  params.TopicArn = topicArn;
+  this.sns.listSubscriptionsByTopic(params, callback);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  callback = topicArn;
+  topicArn = undefined;
+}
+var subscriptions = [];
+var self = this;
+var nextToken;
+async.doWhilst(function(next) {
+  self.<span class="apidocCodeKeywordSpan">_getSubscriptions</span>(nextToken, topicArn, function(err, res) {
+    if (err) {
+      return next(err);
+    }
+    nextToken = res.NextToken;
+    if (res.Subscriptions &#x26;&#x26; res.Subscriptions.length) {
+      subscriptions = subscriptions.concat(res.Subscriptions);
+    }
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.sns-mobile.interface.prototype._getTopics" id="apidoc.element.sns-mobile.interface.prototype._getTopics">
+        function <span class="apidocSignatureSpan">sns-mobile.interface.prototype.</span>_getTopics
+        <span class="apidocSignatureSpan">(nextToken, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">_getTopics = function (nextToken, callback) {
+  var params = {};
+  if (nextToken) {
+    params.NextToken = nextToken;
+  }
+  this.sns.listTopics(params, callback);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+ */
+
+Interface.prototype.getTopics = function(callback) {
+var topics = [];
+var self = this;
+var nextToken;
+async.doWhilst(function(next) {
+  self.<span class="apidocCodeKeywordSpan">_getTopics</span>(nextToken, function(err, res) {
+    if (err) {
+      return next(err);
+    }
+    nextToken = res.NextToken;
+    if (res.Topics &#x26;&#x26; res.Topics.length) {
+      topics = topics.concat(res.Topics);
+    }
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.sns-mobile.interface.prototype._getUsers" id="apidoc.element.sns-mobile.interface.prototype._getUsers">
+        function <span class="apidocSignatureSpan">sns-mobile.interface.prototype.</span>_getUsers
+        <span class="apidocSignatureSpan">(nextToken, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">_getUsers = function (nextToken, callback) {
+  var params = {
+    PlatformApplicationArn: this.getPlatformApplicationArn()
+  };
+
+  if (nextToken) {
+    params.NextToken = nextToken;
+  }
+
+  this.sns.listEndpointsByPlatformApplication(params, callback);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+ * @param {String}    nextToken
+ */
+
+Interface.prototype.getUsers = function(callback) {
+  var users = [];
+
+  var self = this;
+  this.<span class="apidocCodeKeywordSpan">_getUsers</span>(null, function(err, res) {
+if (err) {
+  return callback(err, null);
+}
+var nextToken = res.NextToken;
+users = users.concat(res.Endpoints);
+
+async.whilst(function() {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.sns-mobile.interface.prototype.addUser" id="apidoc.element.sns-mobile.interface.prototype.addUser">
+        function <span class="apidocSignatureSpan">sns-mobile.interface.prototype.</span>addUser
+        <span class="apidocSignatureSpan">(deviceId, customUserData, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">addUser = function (deviceId, customUserData, callback) {
+  if (!callback) {
+    callback = customUserData;
+  }
+
+  var params = {
+    PlatformApplicationArn: this.getPlatformApplicationArn(),
+    Token: deviceId,
+  };
+
+  if(customUserData) {
+    params.CustomUserData = customUserData;
+  }
+
+  var self = this;
+  this.sns.createPlatformEndpoint(params, function(err, res) {
+    if (!err) {
+      self.emit(EMITTED_EVENTS.ADDED_USER, res.EndpointArn, deviceId);
+    } else {
+      self.emit(EMITTED_EVENTS.ADD_USER_FAILED, deviceId, err);
+    }
+    return callback(err, ((res &#x26;&#x26; res.EndpointArn) ? res.EndpointArn : null));
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+secretAccessKey: SNS_KEY_ID,
+platformApplicationArn: ANDROID_ARN,
+//sandbox: true (This is required for targetting (iOS) APNS_SANDBOX only)
+});
+
+// Add a user, the endpointArn is their unique id
+// endpointArn is required to send messages to the device
+androidApp.<span class="apidocCodeKeywordSpan">addUser</span>(&#x27;some_fake_deviceid_that_i_made_up&#x27;, JSON.stringify({
+some: &#x27;extra data&#x27;
+}), function(err, endpointArn) {
+if(err) {
+  throw err;
+}
+
+// Send a simple String or data to the client
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.sns-mobile.interface.prototype.broadcastMessage" id="apidoc.element.sns-mobile.interface.prototype.broadcastMessage">
+        function <span class="apidocSignatureSpan">sns-mobile.interface.prototype.</span>broadcastMessage
+        <span class="apidocSignatureSpan">(message, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">broadcastMessage = function (message, callback) {
+  var self = this;
+  this._getUsers(null, function(err, res) {
+    if (err) {
+      return callback(err, null);
+    }
+    var nextToken = res.NextToken;
+
+    self.emit(EMITTED_EVENTS.BROADCAST_START);
+
+    self._broadcastMessage(res.Endpoints, message, function() {
+      async.whilst(function() {
+        // Only keep going so long as we have a token
+        return (typeof nextToken !== &#x27;undefined&#x27; &#x26;&#x26; nextToken !== null);
+      }, function(cb) {
+        self._getUsers(nextToken, function(err, res) {
+          if (err) {
+            return cb(err);
+          }
+
+          nextToken = res.NextToken;
+          self._broadcastMessage(res.Endpoints, message, cb);
+        });
+      }, function(err) {
+        self.emit(EMITTED_EVENTS.BROADCAST_END);
+        return callback(err);
+      });
+    });
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+it(&#x27;Should send a message to all users on PlatformApplication, will add one first to ensure user exists.&#x27;, function(done
+) {
+  sns.addUser(&#x27;somefakedeviceidthatimadeupagain&#x27;, JSON.stringify({
+    username: &#x27;fakeuser2&#x27;
+  }), function(err, endpointArn) {
+    assert(!err);
+    assert(endpointArn);
+
+    sns.<span class="apidocCodeKeywordSpan">broadcastMessage</span>(&#x27;Hello to ALL the devices!&#x27;, function(err, users) {
+      assert(!err);
+      done();
+    });
+  });
+});
+
+it(&#x27;Should create a user and send a message to that Android user.&#x27;, function(done) {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.sns-mobile.interface.prototype.convertToApnsFormat" id="apidoc.element.sns-mobile.interface.prototype.convertToApnsFormat">
+        function <span class="apidocSignatureSpan">sns-mobile.interface.prototype.</span>convertToApnsFormat
+        <span class="apidocSignatureSpan">(message, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">convertToApnsFormat = function (message, callback) {
+  // APNS format expected by amazon for messages
+  // {
+  //   APNS: JSON.stringify({
+  //     &#x22;aps&#x22;: {
+  //       &#x22;alert&#x22;: &#x22;&#x3c;message&#x3e;&#x22;
+  //     }
+  //   })
+  // }
+
+  var APNS = this.sandbox ? &#x27;APNS_SANDBOX&#x27; : &#x27;APNS&#x27;
+    , messageContainer = {};
+
+  if (typeof message === &#x27;string&#x27;) {
+    try {
+      messageContainer[APNS] = JSON.stringify({
+        aps: {
+          alert: message
+        }
+      });
+
+      callback(null, messageContainer);
+    } catch (e) {
+      callback(e, null);
+    }
+  } else if (message !== null &#x26;&#x26; typeof message === &#x27;object&#x27;) {
+    if (message[&#x27;APNS_SANDBOX&#x27;] || message[&#x27;APNS&#x27;]) {
+      callback(null, message);
+    } else {
+      try {
+        messageContainer[APNS] = JSON.stringify(message);
+        callback(null, messageContainer);
+      } catch (e) {
+        callback(e, null);
+      }
+    }
+  } else {
+    var e = new Error(&#x27;Unable to convert message to APNS format. Message&#x27; +
+      &#x27; must be String/Object.&#x27;);
+
+    callback(e, null);
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.sns-mobile.interface.prototype.convertToGcmFormat" id="apidoc.element.sns-mobile.interface.prototype.convertToGcmFormat">
+        function <span class="apidocSignatureSpan">sns-mobile.interface.prototype.</span>convertToGcmFormat
+        <span class="apidocSignatureSpan">(message, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">convertToGcmFormat = function (message, callback) {
+  // GCM format expected by amazon for messages
+  // {
+  //   GCM: JSON.stringify({
+  //     data: {
+  //       message:&#x22;&#x3c;message&#x3e;&#x22;
+  //     }
+  //   })
+  // }
+
+  var container = {}
+    , key = (this.platform === SUPPORTED_PLATFORMS.ANDROID) ? &#x27;GCM&#x27; : &#x27;ADM&#x27;;
+
+  if (typeof message === &#x27;string&#x27;) {
+    try {
+      container[key] = JSON.stringify({
+        data: {
+          message: message
+        }
+      });
+
+      callback(null, container);
+    } catch (e) {
+      callback(e, null);
+    }
+  } else if (message &#x26;&#x26; typeof message === &#x27;object&#x27;) {
+    if (message.GCM || message.ADM || message.default) {
+      callback(null, message);
+    } else {
+      try {
+        container[key] = JSON.stringify(message);
+
+        callback(null, container);
+      } catch (e) {
+        callback(e, null);
+      }
+    }
+  } else {
+    var e = new Error(&#x27;Unable to convert message to ADM/GCM format. Message &#x27; +
+      &#x27;must be String/Object.&#x27;);
+
+    callback(e, null);
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.sns-mobile.interface.prototype.createTopic" id="apidoc.element.sns-mobile.interface.prototype.createTopic">
+        function <span class="apidocSignatureSpan">sns-mobile.interface.prototype.</span>createTopic
+        <span class="apidocSignatureSpan">(name, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">createTopic = function (name, callback) {
+  var params = {
+    Name: name
+  };
+  var self = this;
+  self.sns.createTopic(params, function(err, res) {
+    if (err) {
+      self.emit(EMITTED_EVENTS.CREATE_TOPIC_FAILED, name, err);
+      return callback(err);
+    }
+    if (!res || !res.TopicArn) {
+      return callback(new Error(&#x27;Response or TopicArn is null&#x27;));
+    }
+    self.emit(EMITTED_EVENTS.TOPIC_CREATED, res.TopicArn, name);
+    callback(null, res.TopicArn);
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+ */
+
+Interface.prototype.createTopic = function(name, callback) {
+var params = {
+  Name: name
+};
+var self = this;
+self.sns.<span class="apidocCodeKeywordSpan">createTopic</span>(params, function(err, res) {
+  if (err) {
+    self.emit(EMITTED_EVENTS.CREATE_TOPIC_FAILED, name, err);
+    return callback(err);
+  }
+  if (!res || !res.TopicArn) {
+    return callback(new Error(&#x27;Response or TopicArn is null&#x27;));
+  }
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.sns-mobile.interface.prototype.deleteTopic" id="apidoc.element.sns-mobile.interface.prototype.deleteTopic">
+        function <span class="apidocSignatureSpan">sns-mobile.interface.prototype.</span>deleteTopic
+        <span class="apidocSignatureSpan">(topicArn, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">deleteTopic = function (topicArn, callback) {
+  var params = {
+    TopicArn: topicArn
+  };
+  var self = this;
+  self.sns.deleteTopic(params, function(err) {
+    if (err) {
+      self.emit(EMITTED_EVENTS.DELETE_TOPIC_FAILED, topicArn, err);
+      return callback(err);
+    }
+    self.emit(EMITTED_EVENTS.TOPIC_DELETED, topicArn);
+    callback();
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+ */
+
+Interface.prototype.deleteTopic = function(topicArn, callback) {
+var params = {
+  TopicArn: topicArn
+};
+var self = this;
+self.sns.<span class="apidocCodeKeywordSpan">deleteTopic</span>(params, function(err) {
+  if (err) {
+    self.emit(EMITTED_EVENTS.DELETE_TOPIC_FAILED, topicArn, err);
+    return callback(err);
+  }
+  self.emit(EMITTED_EVENTS.TOPIC_DELETED, topicArn);
+  callback();
+});
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.sns-mobile.interface.prototype.deleteUser" id="apidoc.element.sns-mobile.interface.prototype.deleteUser">
+        function <span class="apidocSignatureSpan">sns-mobile.interface.prototype.</span>deleteUser
+        <span class="apidocSignatureSpan">(endpointArn, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">deleteUser = function (endpointArn, callback) {
+  var self = this;
+
+  this.sns.deleteEndpoint({
+    EndpointArn: endpointArn
+  }, function(err) {
+    if (!err) {
+      self.emit(EMITTED_EVENTS.DELETED_USER, endpointArn);
+    }
+    return callback(err);
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+      var userData = JSON.parse(attributes.CustomUserData);
+      assert(responseUserData.user_id === userData.user_id);
+
+      var emptyAttributes = {}; // empty attributes should generate an error
+      sns.setAttributes(endpointArn, emptyAttributes, function(err, res) {
+        assert(err);
+
+        sns.<span class="apidocCodeKeywordSpan">deleteUser</span>(endpointArn, function(err) {
+          // Cleanup: delete test user we created so that we can re-run the test
+          done();
+        });
+      });
+    });
+  });
+});
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.sns-mobile.interface.prototype.getApiVersion" id="apidoc.element.sns-mobile.interface.prototype.getApiVersion">
+        function <span class="apidocSignatureSpan">sns-mobile.interface.prototype.</span>getApiVersion
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getApiVersion = function () {
+  return this.sns.config.apiVersion;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    apiVersion: &#x27;2010-03-31&#x27;,
+    accessKeyId: SNS_KEY_ID,
+    secretAccessKey: SNS_ACCESS_KEY,
+    platformApplicationArn: ANDROID_ARN
+  });
+
+  assert(sns);
+  assert(sns.<span class="apidocCodeKeywordSpan">getApiVersion</span>() === &#x27;2010-03-31&#x27;);
+  assert(sns.getRegion() === SNS_REGION);
+  assert(sns.getPlatformApplicationArn() === ANDROID_ARN);
+});
+
+it(&#x27;Should return correct apiVersion, region, PlatformApplicationArn when a custom SNS object is supplied&#x27;, function() {
+  sns = new SNS({
+    platform: SNS.SUPPORTED_PLATFORMS.ANDROID,
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.sns-mobile.interface.prototype.getApplications" id="apidoc.element.sns-mobile.interface.prototype.getApplications">
+        function <span class="apidocSignatureSpan">sns-mobile.interface.prototype.</span>getApplications
+        <span class="apidocSignatureSpan">(callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getApplications = function (callback) {
+  var applications = [];
+
+  var self = this;
+  this._getApplications(null, function(err, res) {
+    if (err) {
+      return callback(err, null);
+    }
+    var nextToken = res.NextToken;
+    applications = applications.concat(res.PlatformApplications);
+
+    async.whilst(function() {
+      // Only keep going so long as we have a token
+      return (typeof nextToken !== &#x27;undefined&#x27; &#x26;&#x26; nextToken !== null);
+    }, function(cb) {
+      self._getApplications(nextToken, function(err, res) {
+        if (err) {
+          return cb(err);
+        }
+
+        nextToken = res.NextToken;
+        applications = applications.concat(res.PlatformApplications);
+        cb();
+      });
+    }, function(err) {
+      return callback(err, applications);
+    });
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    accessKeyId: SNS_KEY_ID,
+    secretAccessKey: SNS_ACCESS_KEY,
+    platformApplicationArn: ANDROID_ARN
+  });
+});
+
+it(&#x27;Should return PlatformApplications list&#x27;, function(done) {
+  sns.<span class="apidocCodeKeywordSpan">getApplications</span>(function(err, apps) {
+    assert(!err);
+    assert(apps);
+    assert(apps.length &#x3e;= 0);
+    done();
+  });
+});
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.sns-mobile.interface.prototype.getPlatformApplicationArn" id="apidoc.element.sns-mobile.interface.prototype.getPlatformApplicationArn">
+        function <span class="apidocSignatureSpan">sns-mobile.interface.prototype.</span>getPlatformApplicationArn
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getPlatformApplicationArn = function () {
+  return this.platformApplicationArn;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+Interface.prototype.addUser = function(deviceId, customUserData, callback) {
+if (!callback) {
+  callback = customUserData;
+}
+
+var params = {
+  PlatformApplicationArn: this.<span class="apidocCodeKeywordSpan">getPlatformApplicationArn</span>(),
+  Token: deviceId,
+};
+
+if(customUserData) {
+  params.CustomUserData = customUserData;
+}
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.sns-mobile.interface.prototype.getRegion" id="apidoc.element.sns-mobile.interface.prototype.getRegion">
+        function <span class="apidocSignatureSpan">sns-mobile.interface.prototype.</span>getRegion
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getRegion = function () {
+  return this.sns.config.region;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    accessKeyId: SNS_KEY_ID,
+    secretAccessKey: SNS_ACCESS_KEY,
+    platformApplicationArn: ANDROID_ARN
+  });
+
+  assert(sns);
+  assert(sns.getApiVersion() === &#x27;2010-03-31&#x27;);
+  assert(sns.<span class="apidocCodeKeywordSpan">getRegion</span>() === SNS_REGION);
+  assert(sns.getPlatformApplicationArn() === ANDROID_ARN);
+});
+
+it(&#x27;Should return correct apiVersion, region, PlatformApplicationArn when a custom SNS object is supplied&#x27;, function() {
+  sns = new SNS({
+    platform: SNS.SUPPORTED_PLATFORMS.ANDROID,
+    platformApplicationArn: ANDROID_ARN,
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.sns-mobile.interface.prototype.getSubscriptions" id="apidoc.element.sns-mobile.interface.prototype.getSubscriptions">
+        function <span class="apidocSignatureSpan">sns-mobile.interface.prototype.</span>getSubscriptions
+        <span class="apidocSignatureSpan">(topicArn, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getSubscriptions = function (topicArn, callback) {
+  if (typeof topicArn === &#x27;function&#x27;) {
+    callback = topicArn;
+    topicArn = undefined;
+  }
+  var subscriptions = [];
+  var self = this;
+  var nextToken;
+  async.doWhilst(function(next) {
+    self._getSubscriptions(nextToken, topicArn, function(err, res) {
+      if (err) {
+        return next(err);
+      }
+      nextToken = res.NextToken;
+      if (res.Subscriptions &#x26;&#x26; res.Subscriptions.length) {
+        subscriptions = subscriptions.concat(res.Subscriptions);
+      }
+      next();
+    });
+  }, function() {
+    return !!nextToken;
+  }, function(err) {
+    if (err) {
+      return callback(err);
+    }
+    callback(null, subscriptions);
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+      theSubscriptionArnThatThisTestCreated = subscriptionArn;
+      done();
+    });
+  });
+});
+
+it(&#x27;Should list all subscriptions.&#x27;, function(done) {
+  sns.<span class="apidocCodeKeywordSpan">getSubscriptions</span>(function(err, subscriptions) {
+    assert(!err);
+    assert(subscriptions);
+    assert(subscriptions.length &#x3e; 0);
+    var theSubscriptionThatWasCreatedEarlier = subscriptions.filter(function(subscription) {
+      return subscription.SubscriptionArn === theSubscriptionArnThatThisTestCreated;
+    })[0];
+    assert(theSubscriptionThatWasCreatedEarlier)
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.sns-mobile.interface.prototype.getTopics" id="apidoc.element.sns-mobile.interface.prototype.getTopics">
+        function <span class="apidocSignatureSpan">sns-mobile.interface.prototype.</span>getTopics
+        <span class="apidocSignatureSpan">(callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getTopics = function (callback) {
+  var topics = [];
+  var self = this;
+  var nextToken;
+  async.doWhilst(function(next) {
+    self._getTopics(nextToken, function(err, res) {
+      if (err) {
+        return next(err);
+      }
+      nextToken = res.NextToken;
+      if (res.Topics &#x26;&#x26; res.Topics.length) {
+        topics = topics.concat(res.Topics);
+      }
+      next();
+    });
+  }, function() {
+    return !!nextToken;
+  }, function(err) {
+    if (err) {
+      return callback(err);
+    }
+    callback(null, topics);
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    assert(topicArn);
+    theTopicArnThatThisTestCreated = topicArn;
+    done();
+  });
+});
+
+it(&#x27;Should list topics.&#x27;, function(done) {
+  sns.<span class="apidocCodeKeywordSpan">getTopics</span>(function(err, topics) {
+    assert(!err);
+    assert(topics);
+    assert(topics.length &#x3e; 0);
+    var theTopicThatWasCreatedEarlier = topics.filter(function(topic) {
+      return topic.TopicArn === theTopicArnThatThisTestCreated;
+    })[0];
+    assert(theTopicThatWasCreatedEarlier)
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.sns-mobile.interface.prototype.getUser" id="apidoc.element.sns-mobile.interface.prototype.getUser">
+        function <span class="apidocSignatureSpan">sns-mobile.interface.prototype.</span>getUser
+        <span class="apidocSignatureSpan">(endpointArn, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getUser = function (endpointArn, callback) {
+  this.sns.getEndpointAttributes({
+    EndpointArn: endpointArn
+  }, function(err, res) {
+    if (err) {
+      return callback(err, null);
+    }
+
+    res.EndpointArn = endpointArn;
+    return callback(null, res);
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    });
+  });
+
+  it(&#x27;Should retrieve a user by their EndpointArn and update their properties.&#x27;, function(done) {
+    sns.addUser(&#x27;anotherfakedeviceidthatimadeup&#x27;, JSON.stringify({
+      username: &#x27;fakeuserforattributetest&#x27;
+    }), function(err, endpointArn) {
+      sns.<span class="apidocCodeKeywordSpan">getUser</span>(endpointArn, function(err, res) {
+
+var attributes = {
+  CustomUserData: {
+    user_id: &#x27;updated-attribute-user-id&#x27;
+  },
+  Enabled: &#x27;true&#x27;
+};
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.sns-mobile.interface.prototype.getUsers" id="apidoc.element.sns-mobile.interface.prototype.getUsers">
+        function <span class="apidocSignatureSpan">sns-mobile.interface.prototype.</span>getUsers
+        <span class="apidocSignatureSpan">(callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getUsers = function (callback) {
+  var users = [];
+
+  var self = this;
+  this._getUsers(null, function(err, res) {
+    if (err) {
+      return callback(err, null);
+    }
+    var nextToken = res.NextToken;
+    users = users.concat(res.Endpoints);
+
+    async.whilst(function() {
+      // Only keep going so long as we have a token
+      return (typeof nextToken !== &#x27;undefined&#x27; &#x26;&#x26; nextToken !== null);
+    }, function(cb) {
+      self._getUsers(nextToken, function(err, res) {
+        if (err) {
+          return cb(err);
+        }
+
+        nextToken = res.NextToken;
+        users = users.concat(res.Endpoints);
+        cb();
+      });
+    }, function(err) {
+      return callback(err, users);
+    });
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    assert(apps);
+    assert(apps.length &#x3e;= 0);
+    done();
+  });
+});
+
+it(&#x27;Should return Endpoints list for given PlatformApplication&#x27;, function(done) {
+  sns.<span class="apidocCodeKeywordSpan">getUsers</span>(function(err, users) {
+    assert(!err);
+    assert(users);
+    assert(users.length &#x3e;= 0);
+    done();
+  });
+});
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.sns-mobile.interface.prototype.publishToTopic" id="apidoc.element.sns-mobile.interface.prototype.publishToTopic">
+        function <span class="apidocSignatureSpan">sns-mobile.interface.prototype.</span>publishToTopic
+        <span class="apidocSignatureSpan">(topicArn, message, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">publishToTopic = function (topicArn, message, callback) {
+  if (!validateMessageStructure(message)) {
+    return callback(
+      new Error(
+        &#x27;Argument &#x22;message&#x22; must be in SNS multi-platform publishing format.&#x27;
+      )
+    );
+  }
+
+  var self = this;
+  self.sns.publish({
+    Message: JSON.stringify(message),
+    TopicArn: topicArn,
+    MessageStructure: &#x27;json&#x27;,
+  }, function(err, res) {
+    if (err) {
+      self.emit(EMITTED_EVENTS.PUBLISH_FAILED, topicArn, err);
+      return callback(err);
+    }
+    if (!res || !res.MessageId) {
+      return callback(new Error(&#x27;Response or MessageId is null&#x27;));
+    }
+    self.emit(EMITTED_EVENTS.PUBLISHED_MESSAGE, topicArn, res.MessageId);
+    callback(null, res.MessageId);
+  });
+
+  function validateMessageStructure(message) {
+    if (!message.default) {
+      return false;
+    }
+    if (typeof message.default !== &#x27;string&#x27;) {
+      return false;
+    }
+    return true;
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    })[0];
+    assert(theSubscriptionThatWasCreatedEarlier)
+    done();
+  });
+});
+
+it(&#x27;Should fail to publish a message to a topic if message body is missing &#x22;default&#x22; key.&#x27;, function(done) {
+  sns.<span class="apidocCodeKeywordSpan">publishToTopic</span>(theTopicArnThatThisTestCreated, {
+    foo: &#x27;missing top-level key &#x22;default&#x22;&#x27;
+  }, function(err, res) {
+    assert(err);
+    assert.equal(err.message, &#x27;Argument &#x22;message&#x22; must be in SNS multi-platform publishing format.&#x27;);
+    done();
+  })
+});
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.sns-mobile.interface.prototype.sendMessage" id="apidoc.element.sns-mobile.interface.prototype.sendMessage">
+        function <span class="apidocSignatureSpan">sns-mobile.interface.prototype.</span>sendMessage
+        <span class="apidocSignatureSpan">(endpointArn, msg, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">sendMessage = function (endpointArn, msg, callback) {
+  var self = this
+    , convertFn = null;
+
+  if (this.platform === SUPPORTED_PLATFORMS.ANDROID ||
+      this.platform === SUPPORTED_PLATFORMS.KINDLE_FIRE) {
+    convertFn = this.convertToGcmFormat;
+  } else if (this.platform === SUPPORTED_PLATFORMS.IOS) {
+    convertFn = this.convertToApnsFormat;
+  } else {
+    var e = util.format(&#x27;Unsupported platform detected, &#x22;%s&#x22;. Please use a &#x27; +
+      &#x27;platform on SNS.SUPPORTED_PLATFORMS&#x27;, this.platform);
+
+    throw new Error(e);
+  }
+
+  convertFn.call(this, msg, function (err, message) {
+    try {
+      self.sns.publish({
+        Message: JSON.stringify(message),
+        TargetArn: endpointArn,
+        MessageStructure: &#x27;json&#x27;,
+      }, function(err, res) {
+        if (err) {
+          self.emit(EMITTED_EVENTS.FAILED_SEND, endpointArn, err);
+        } else {
+          self.emit(EMITTED_EVENTS.SENT_MESSAGE, endpointArn, res.MessageId);
+        }
+
+        return callback(err, ((res &#x26;&#x26; res.MessageId) ? res.MessageId : null));
+      });
+    } catch (e) {
+      return callback(e, null);
+    }
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  some: &#x27;extra data&#x27;
+}), function(err, endpointArn) {
+  if(err) {
+    throw err;
+  }
+
+  // Send a simple String or data to the client
+  androidApp.<span class="apidocCodeKeywordSpan">sendMessage</span>(enpointArn, &#x27;Hi There!&#x27;, function(err, messageId) {
+    if(err) {
+      throw err;
+    }
+
+    console.log(&#x27;Message sent, ID was: &#x27; + messageId);
+  });
+});
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.sns-mobile.interface.prototype.setAttributes" id="apidoc.element.sns-mobile.interface.prototype.setAttributes">
+        function <span class="apidocSignatureSpan">sns-mobile.interface.prototype.</span>setAttributes
+        <span class="apidocSignatureSpan">(endpointArn, attributes, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">setAttributes = function (endpointArn, attributes, callback) {
+  var self = this;
+  var attributesType = typeof(attributes);
+  if (attributesType == &#x27;object&#x27;) {
+    try {
+      if (typeof attributes.CustomUserData == &#x27;object&#x27;) {
+        attributes.CustomUserData = JSON.stringify(attributes.CustomUserData);
+      }
+    } catch (e) {
+      return callback(e, null);
+    }
+  } else {
+    return callback(
+      new Error(&#x27;Expected second parameter to be of type object (&#x27; +
+        attributesType + &#x27; supplied).&#x27;), null);
+  }
+  var params = {
+    EndpointArn: endpointArn,
+    Attributes: attributes
+  };
+  this.sns.setEndpointAttributes(params, function(err) {
+    if (!err) {
+      self.emit(EMITTED_EVENTS.ATTRIBUTES_UPDATED, endpointArn, attributes);
+    } else {
+      self.emit(EMITTED_EVENTS.ATTRIBUTES_UPDATE_FAILED, endpointArn, err);
+    }
+    return callback(err, attributes);
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+        var attributes = {
+CustomUserData: {
+  user_id: &#x27;updated-attribute-user-id&#x27;
+},
+Enabled: &#x27;true&#x27;
+        };
+        sns.<span class="apidocCodeKeywordSpan">setAttributes</span>(res.EndpointArn, attributes, function(err, res) {
+assert(!err);
+assert(res === attributes);
+
+sns.getUser(endpointArn, function(err, res) {
+  assert(!err);
+  assert(res.EndpointArn === endpointArn);
+  assert(res.Attributes);
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.sns-mobile.interface.prototype.subscribe" id="apidoc.element.sns-mobile.interface.prototype.subscribe">
+        function <span class="apidocSignatureSpan">sns-mobile.interface.prototype.</span>subscribe
+        <span class="apidocSignatureSpan">(endpointArn, topicArn, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">subscribe = function (endpointArn, topicArn, callback) {
+  var params = {
+    Endpoint: endpointArn,
+    TopicArn: topicArn,
+    Protocol: &#x27;application&#x27;
+  };
+  var self = this;
+  self.sns.subscribe(params, function(err, res) {
+    if (err) {
+      self.emit(EMITTED_EVENTS.SUBSCRIBE_FAILED, endpointArn, topicArn, err);
+      return callback(err);
+    }
+    if (!res || !res.SubscriptionArn) {
+      return callback(new Error(&#x27;Response or SubscriptionArn is null&#x27;));
+    }
+    self.emit(
+      EMITTED_EVENTS.SUBSCRIBED,
+      res.SubscriptionArn,
+      endpointArn,
+      topicArn
+    );
+    callback(null, res.SubscriptionArn);
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+Interface.prototype.subscribe = function(endpointArn, topicArn, callback) {
+var params = {
+  Endpoint: endpointArn,
+  TopicArn: topicArn,
+  Protocol: &#x27;application&#x27;
+};
+var self = this;
+self.sns.<span class="apidocCodeKeywordSpan">subscribe</span>(params, function(err, res) {
+  if (err) {
+    self.emit(EMITTED_EVENTS.SUBSCRIBE_FAILED, endpointArn, topicArn, err);
+    return callback(err);
+  }
+  if (!res || !res.SubscriptionArn) {
+    return callback(new Error(&#x27;Response or SubscriptionArn is null&#x27;));
+  }
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.sns-mobile.interface.prototype.unsubscribe" id="apidoc.element.sns-mobile.interface.prototype.unsubscribe">
+        function <span class="apidocSignatureSpan">sns-mobile.interface.prototype.</span>unsubscribe
+        <span class="apidocSignatureSpan">(subscriptionArn, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">unsubscribe = function (subscriptionArn, callback) {
+  var params = {
+    SubscriptionArn: subscriptionArn
+  };
+  var self = this;
+  self.sns.unsubscribe(params, function(err) {
+    if (err) {
+      self.emit(EMITTED_EVENTS.UNSUBSCRIBE_FAILED, subscriptionArn, err);
+      return callback(err);
+    }
+    self.emit(EMITTED_EVENTS.UNSUBSCRIBED, subscriptionArn);
+    callback();
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+ */
+
+Interface.prototype.unsubscribe = function(subscriptionArn, callback) {
+var params = {
+  SubscriptionArn: subscriptionArn
+};
+var self = this;
+self.sns.<span class="apidocCodeKeywordSpan">unsubscribe</span>(params, function(err) {
+  if (err) {
+    self.emit(EMITTED_EVENTS.UNSUBSCRIBE_FAILED, subscriptionArn, err);
+    return callback(err);
+  }
+  self.emit(EMITTED_EVENTS.UNSUBSCRIBED, subscriptionArn);
+  callback();
+});
+...</pre></li>
     </ul>
 
 
